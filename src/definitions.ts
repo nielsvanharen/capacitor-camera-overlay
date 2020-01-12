@@ -5,5 +5,7 @@ declare module "@capacitor/core" {
 }
 
 export interface CameraOverlayPlugin {
-  echo(options: { value: string }): Promise<{value: string}>;
+  start({}): Promise<{}>;
+  stop(): Promise<{}>;
+  capture(): Promise<{ value: string }>;
 }
